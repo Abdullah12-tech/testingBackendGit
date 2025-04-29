@@ -11,11 +11,14 @@ app.listen(PORT, ()=>{
   
 })
 
+
 app.get("/user", (req, res)=>{
   res.send({
     message:'user is here'
   })
 })
+
+
 
 app.use("/api/users", userRouter)
 
